@@ -1,19 +1,19 @@
-function square(width, height) {
+function calculateRectangleArea(width, height) {
     const area = width * height;
     return area;
 }
 
-console.log(square(5, 10));
+console.log(calculateRectangleArea(5, 10));
 
 
-const square2 = function (width, height) {
+const calculateRectangleArea2 = function (width, height) {
     const area = width * height;
     return area;
 }
 
-console.log(square2(5, 10));
+console.log(calculateRectangleArea2(5, 10));
 
 
-const square3 = (width, height) => width * height;
+const calculateRectangleArea3 = (width, height) => width * height;
 
-console.log(square3(5, 10));
+console.log(calculateRectangleArea3(5, 10));
