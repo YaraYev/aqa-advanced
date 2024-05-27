@@ -10,26 +10,18 @@ function divide(numerator, denominator) {
     return numerator / denominator
 }
 
-try {
-    divide(10, 2)
-} catch (error) {
-    console.log('An error has occured:', error.message);
-} finally {
-    console.log("The work has correctly finished")
+function checkDivide(numerator, denominator) {
+    try {
+        let res = divide(numerator, denominator)
+        console.log(`Result of dividing ${numerator} and ${denominator} is ${res}`)
+    } catch (error) {
+        console.log('An error has occured:', error.message);
+    } finally {
+        console.log("The work has finished")
+    }
 }
 
-try {
-    divide(12, 0)
-} catch (error) {
-    console.log('An error has occured:', error.message);
-} finally {
-    console.log("The work has correctly finished")
-}
-
-try {
-    divide(12, "k")
-} catch (error) {
-    console.log('An error has occured:', error.message);
-} finally {
-    console.log("The work has correctly finished")
-}
+checkDivide(12, 5)
+checkDivide("k", 5)
+checkDivide(10, 0)
+checkDivide(13, "hy")
